@@ -1,9 +1,9 @@
-// require('dotenv').config(); // add the library "yarn add dotenv", then add this as first line of code
+require('dotenv').config(); // add the library "yarn add dotenv", then add this as first line of code
 
 const server = require('./server.js');
 
-const PORT = 4000;
-// const PORT = process.env.PORT || 4000;
+// const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 
 // server.get('/', (req, res) => {
 //   res.send(process.env.SECRET_KEY);
