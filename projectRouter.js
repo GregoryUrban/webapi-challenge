@@ -32,7 +32,7 @@ router.post('/', validateProject, async (req, res) => {
   });
 
   // Adding a new project action using ActionModel
-  router.post('/:id/actions', validateAction, async (req, res) => {
+  router.post('/:id/actions/:id', validateAction, async (req, res) => {
     const actionInfo = { ...req.body, id: req.params.id };
 
     try {
